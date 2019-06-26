@@ -1,0 +1,52 @@
+<? include "inc_header.html"; ?>
+<? include "inc_submenu1.html"; ?>
+
+
+        <section>
+                <div id="sub_subtitle">
+                    <p>오시는 길<br /><span>본은 어디에 있을까요? 본으로 놀러오세요!</span></p>
+                </div>
+
+            <div id=sub_ne_title2>
+               <p>충청북도 진천군 이월면 진광로 702-10</p>
+            </div>
+            <div class="clear"> </div>
+            <!-- * Daum 지도 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1527651104549" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+  2. 설치 스크립트
+  * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+  new daum.roughmap.Lander({
+    "timestamp" : "1527651104549",
+    "key" : "odcu",
+    "mapWidth" : "1300",
+    "mapHeight" : "600"
+  }).render();
+</script>
+
+
+            <div class="clear"> </div>
+            <div id="map">
+                <ul>
+                    <li><a href="http://map.daum.net/" target="_blank"><img src="images/map_05.png"></a></li>
+                    <li><a href="https://map.naver.com/" target="_blank"><img src="images/map_07.png"></a></li>
+                </ul>
+            </div>
+
+        </section>
+<div class="clear"></div>
+
+
+
+<? include "inc_footer.html"; ?>
+
+    </div>
+</body>
+</html>
