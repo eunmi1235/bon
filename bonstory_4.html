@@ -1,7 +1,19 @@
-<? include "inc_header.html"; ?>
-<? include "inc_submenu1.html"; ?>
+<head>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript">   
+$(document).ready( function() { 
 
+$("#headers").load("inc_header.html");  // 원하는 파일 경로를 삽입하면 된다
+$("#submenu1").load("inc_submenu1.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+$("#footers").load("inc_footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
 
+}); 
+</script>
+
+</head> 
+       <body>
+        <div id="header"></div>
+             <div id="submenu4"></div>
         <section>
                 <div id="sub_subtitle">
                     <p>직원소개<br /><span>인간과 자연을 함께 사랑하는 본(?) 기업입니다.</span></p>
@@ -119,16 +131,7 @@
 
     </div>
 
-    </div>
-     </body>
-
-
+  
 <div class="clear"></div>
 
-
-
-<? include "inc_footer.html"; ?>
-
-    </div>
-</body>
-</html>
+             <div id="footers"></div>
