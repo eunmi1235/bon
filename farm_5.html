@@ -1,8 +1,20 @@
-<? include "inc_header.html"; ?>
-<? include "inc_submenu2.html"; ?>
+<head>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript">   
+$(document).ready( function() { 
 
+$("#headers").load("inc_header.html");  // 원하는 파일 경로를 삽입하면 된다
+$("#submenu2").load("inc_submenu2.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+$("#footers").load("inc_footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
 
-        <section>
+}); 
+</script>
+
+</head> 
+       <body>
+        <div id="header"></div>
+             <div id="submenu2"></div>        
+               <section>
                 <div id="sub_subtitle">
                     <p>본 텃밭<br /><span>집에서 느끼는 자연의 신선함</span></p>
                 </div>
@@ -57,8 +69,4 @@
         <div class="clear"> </div>
 
 
-<? include "inc_footer.html"; ?>
-
-    </div>
-</body>
-</html>
+<div id="footers"></div>
