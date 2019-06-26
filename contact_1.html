@@ -1,7 +1,19 @@
-<? include "inc_header.html"; ?>
-<? include "inc_submenu6.html"; ?>
+<head>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript">   
+$(document).ready( function() { 
 
+$("#headers").load("inc_header.html");  // 원하는 파일 경로를 삽입하면 된다
+$("#submenu6").load("inc_submenu6.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+$("#footers").load("inc_footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
 
+}); 
+</script>
+
+</head> 
+       <body>
+        <div id="header"></div>
+             <div id="submenu6"></div>
               <section>
                 <div id="sub_subtitle">
                     <p>공지사항 <img src=images/c27.png><br /><span>본(BON) 공지사항</span></p>
@@ -106,10 +118,4 @@
         </div>
 
     <div class="clear"></div>
-
-
-<? include "inc_footer.html"; ?>
-
-    </div>
-</body>
-</html>
+<div id="footers"></div>
