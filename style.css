@@ -918,8 +918,8 @@ tr, td {border-bottom: 1px; border-color: #999; border-top: 1px solid; border-co
 #recipe_title{width: 100%; height:550px; background:url(images/sub_roll.jpg)no-repeat center;}
 #recipe_title ul {width: 1300px; margin:0 auto; text-align: center;}
 #recipe_title ul li{color: #fff;}
-#recipe_title ul li:nth-child(1) {padding-top: 200px; font-size: 80px;}
-#recipe_title ul li:nth-child(2) {margin-top: 50px; letter-spacing: 20px; }
+#recipe_title ul li:nth-child(1) {padding-top: 300px; font-size: 80px;}
+#recipe_title ul li:nth-child(2) {margin-top: 70px; letter-spacing: 20px; }
 #recipe_title ul li:nth-child(2)>p{display:inline-block; padding:5px 5px 2px 25px; background-color:rgba(0,53,27,0.7);}
 
 
@@ -1024,6 +1024,6 @@ tr, td {border-bottom: 1px; border-color: #999; border-top: 1px solid; border-co
 
 #rice h3{width:1300px; margin: 0 auto; font-size:40px;padding-top:200px; padding-bottom: 60px;}
 #rice h4{width:100%; height:263px; background:url(images/sub_rice.jpg)no-repeat center; padding: 30px 0px;}
-#rice p{width:1300px; margin: 0 auto; padding-left: 600px; padding-top:40px;}
+#rice p{width:1300px; margin: 0 auto; padding-left: 600px; padding-top:40px; text-align: center; line-height: 50px;}
 /*세현 서브 스타일 레시피 쉬림프 썸머롤 끝*/
 
