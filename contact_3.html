@@ -1,50 +1,80 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu6.html" ?>
-        <section>
-                <div id="sub_subtitle">
-                    <p>1:1 문의하기<br /><span>궁금한 점을 본에게 알려주세요!</span></p>
-                </div>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
+
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu6.html"); 
+    });
+</script> 
+</head> 
+<body>
+  <header id="header"></header>
+  <div id="contents"></div> 
+  <section>
+    <div id="sub_subtitle">
+        <p>1:1 문의하기<br /><span>궁금한 점을 본에게 알려주세요!</span></p>
+    </div>
 
 
-           <div class="clear"></div>
+    <div class="clear"></div>
 
-        <section id="sub">
+    <section id="sub">
 
-            <!--서브 구성 컨텐츠--->
+    <!--서브 구성 컨텐츠--->
 
-            <div id="consult_text_box">
-            <ul>
-                <li>이름</li>
-                <li><input type="text" name="text_name" placeholder="이름을 입력하세요." / ></li>
-                <li>이메일</li>
-                <li><input type="text" name="text_mail" placeholder=" "  / > @ <input type="text" name="text_mail" placeholder="직접입력"  / ></li>
-                <li>핸드폰 번호</li>
-                <li><input type="text" name="text_phone1" placeholder="010" maxlength="13" / > - <input type="text" name="text_phone2" placeholder="1234" maxlength="13" / > - <input type="text" name="text_phone3" placeholder="5678" maxlength="13" / ></li>
-                <li>첨부파일</li>
-                <li><input type="text" name="text_name" placeholder="첨부파일을 등록해주세요" / > <a href="#">등록하기</a></li>
-                <li>문의사항</li>
-                <li><textarea name="text_content" placeholder="문의내용을 입력해주세요." ></textarea></li>
-            </ul>
-            </div>
+    <div id="consult_text_box">
+        <ul>
+            <li>이름</li>
+            <li><input type="text" name="text_name" placeholder="이름을 입력하세요." / ></li>
+            <li>이메일</li>
+            <li><input type="text" name="text_mail" placeholder=" "  / > @ <input type="text" name="text_mail" placeholder="직접입력"  / ></li>
+            <li>핸드폰 번호</li>
+            <li><input type="text" name="text_phone1" placeholder="010" maxlength="13" / > - <input type="text" name="text_phone2" placeholder="1234" maxlength="13" / > - <input type="text" name="text_phone3" placeholder="5678" maxlength="13" / ></li>
+            <li>첨부파일</li>
+            <li><input type="text" name="text_name" placeholder="첨부파일을 등록해주세요" / > <a href="#">등록하기</a></li>
+            <li>문의사항</li>
+            <li><textarea name="text_content" placeholder="문의내용을 입력해주세요." ></textarea></li>
+        </ul>
+    </div>
 
-            <!--서브 구성 컨텐츠--->
+    <!--서브 구성 컨텐츠--->
 
-        </section>
+    </section>
 
-               <div class="clear"></div>
+    <div class="clear"></div>
 
-            <div id="sub_bottom_blank"></div>
+    <div id="sub_bottom_blank"></div>
 
 
-            <div class="clear"> </div>
-            <div id="store">
-                <ul>
-                    <li><a href="#">확인 </a></li>
-                    <li><a href="#">취소 </a></li>
-                </ul>
-            </div>
+    <div class="clear"> </div>
+    <div id="store">
+        <ul>
+            <li><a href="#">확인 </a></li>
+            <li><a href="#">취소 </a></li>
+        </ul>
+    </div>
 
-        </section>
-        <div class="clear"> </div>
-
-<? include "inc_footer.html" ?>
+    </section>
+    <div class="clear"> </div>
+    <footer id="footer"></footer>
+</body>
+</html>

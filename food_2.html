@@ -1,16 +1,44 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu3.html" ?>
-               <section>
+<!DOCTYPE html>
+<html lang="ko">  
+<head>
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
+
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu3.html"); 
+    });
+</script> 
+</head> 
+<body>
+    <header id="header"></header>
+    <div id="contents"></div> 
+
+    <section>
+        <div id="sub_subtitle">
+                <p>본 찬<br /><span>셰프의 비밀스런 레시피로 맛있는 요리를 만들어 보세요.</span></p>
+        </div>
+
+        <div class="clear"></div>
 
 
-           <div id="sub_subtitle">
-                    <p>본 찬<br /><span>셰프의 비밀스런 레시피로 맛있는 요리를 만들어 보세요.</span></p>
-            </div>
-
-            <div class="clear"></div>
-
-
-            <div id="b_chans">
+        <div id="b_chans">
             <ul>
                 <li><a href="sub_recipe.html"><img src="images/sud_veg_re_1.jpg"></a></li>
                 <li><a href="sub_recipe.html"><img src="images/sud_veg_re_2.jpg"></a></li>
@@ -35,21 +63,11 @@
                 <li><a href="sub_recipe.html"><img src="images/sud_veg_re_11.jpg"></a></li>
                 <li><a href="sub_recipe.html"><img src="images/sud_veg_re_12.jpg"></a></li>
             </ul>
-
-
-            </div>
-
-
-
+        </div>
     </section>
 
+    <div class="clear"></div>
 
-
-
-
-
-
-
-<div class="clear"></div>
-
-<? include "inc_footer.html" ?>
+    <footer id="footer"></footer>
+</body>
+</html>

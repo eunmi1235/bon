@@ -1,89 +1,120 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu6.html" ?>
-              <section>
-                <div id="sub_subtitle">
-                    <p>자주묻는 질문 <img src=images/c27.png><br /><span>본(BON) 자주묻는 질문</span></p>
-                </div>
-            </section>
-        <div id="content">
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-        <div id="choice1">
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
+
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu6.html"); 
+    });
+</script> 
+</head> 
+<body>
+    <header id="header"></header>
+    <div id="contents"></div> 
+    <section>
+        <div id="sub_subtitle">
+            <p>자주묻는 질문 <img src=images/c27.png><br /><span>본(BON) 자주묻는 질문</span></p>
+        </div>
+    </section>
+    <div id="content">
+
+    <div id="choice1">
+    <ul>
+    <li>
+    <li><input type="radio" name="fruit" value="제목" /> 제목</li>
+    <li><input type="radio" name="fruit" value="내용"  /> 내용 </li>
+    </ul>
+
         <ul>
-            <li>
-            <li><input type="radio" name="fruit" value="제목" /> 제목</li>
-            <li><input type="radio" name="fruit" value="내용"  /> 내용 </li>
-             </ul>
+            <li><input type="text" name="serch" value="" /></li>
+            <li><a href="">검 색</a></li>
+        </ul>
 
-                <ul>
-                    <li><input type="text" name="serch" value="" /></li>
-                    <li><a href="">검 색</a></li>
-                </ul>
-
-        </div>
-
-            <div class="clear"></div>
-
-            <table id="a2">
-            <tr>
-            <td colspan="3">제목</td>
-            </tr>
-
-            <tr>
-           <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>    정기 배송을 신청했는데 일정을 확인하고 싶어요.</a></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>   배송 현황을 확인하고 싶어요.</a></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  제주/도서산간 지역도 배송이 되나요?</a></td>
-            </tr>
-
-                <tr>
-                    <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>   동시에 여러가지 상품을 주문했는데 한번에 배송되나요?</a></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  어느 택배사로 배송되나요?</a></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  배송은 몇 시에 도착하나요?</a></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  배송휴무는 언제인가요?</a></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  주문하면 언제 배송을 받나요?</a></td>
-            </tr>
-             </table>
-
-            <div class="clear"></div>
-
-            <div id="button">
-             <ul>
-                <li><a href="#">1</a></li>
-                <li>|</li>
-                <li><a href="#">2</a></li>
-                <li>|</li>
-                <li><a href="#">3</a></li>
-                </ul>
-            </div>
-
-            <div class="clear"></div>
-
-            <div id="write">
-            <ul>
-                <li><a href="#">글쓰기</a></li>
-                </ul>
-            <ul>
-                <li><a href="#">목록</a></li>
-                </ul>
-            </div>
-        </div>
+    </div>
 
     <div class="clear"></div>
-<? include "inc_footer.html" ?>
+
+    <table id="a2">
+    <tr>
+    <td colspan="3">제목</td>
+    </tr>
+
+    <tr>
+    <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>    정기 배송을 신청했는데 일정을 확인하고 싶어요.</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>   배송 현황을 확인하고 싶어요.</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  제주/도서산간 지역도 배송이 되나요?</a></td>
+    </tr>
+
+        <tr>
+            <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>   동시에 여러가지 상품을 주문했는데 한번에 배송되나요?</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  어느 택배사로 배송되나요?</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  배송은 몇 시에 도착하나요?</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  배송휴무는 언제인가요?</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><a href="#"><span style="color: #417f6d;">[배송문의]</span>  주문하면 언제 배송을 받나요?</a></td>
+    </tr>
+    </table>
+
+    <div class="clear"></div>
+
+    <div id="button">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li>|</li>
+        <li><a href="#">2</a></li>
+        <li>|</li>
+        <li><a href="#">3</a></li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="write">
+    <ul>
+        <li><a href="#">글쓰기</a></li>
+        </ul>
+    <ul>
+        <li><a href="#">목록</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="clear"></div>
+    <footer id="footer"></footer>
+</body>
+</html>

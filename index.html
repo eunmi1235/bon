@@ -1,153 +1,200 @@
-<? include "inc_header.html" ?>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
 
 
-<div id="fullpage">
-	
-	<div class="section" id="section0">
-	    <div class="slide" id="slide1">
-			<!--img1-->
-            <div id="main_img_bg1">
-            <!-- main logo -->
-                <div id="main_box">         
-                   <div id="main_logo"><img src="images/main_logo.png"></div>
-                    <div id="scroll"><img src="images/scroll1.gif"></div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+            sectionsColor: ['#fff', '#6f9c3f', '#fff', '#6f9c3f'],  
+            scrollOverflow: true,
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['intro', '본이야기', '본농장&식품', '본농장체험']
+        }); 
+    });
+</script>
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+    });
+</script> 
+</head>
+<body>
+    <div id="contents">
+        <header id="header"></header> 
+        <div id="fullpage">
+            <div class="section" id="section0">
+                <div class="slide" id="slide1">
+                    <!--img1-->
+                    <div id="main_img_bg1">
+                    <!-- main logo -->
+                        <div id="main_box">         
+                        <div id="main_logo"><img src="./images/main_logo.png"></div> 
+                            <div id="scroll"><img src="./images/scroll1.gif"></div>
+                        </div>
+                    </div>    
+                    <!--img1-->
                 </div>
-            </div>    
-            <!--img1-->
-		</div>
 
-	    <div class="slide" id="slide2">
-			<!--img1-->
-            <div id="main_img_bg2">
-            <!-- main logo -->
-                <div id="main_box">
-                    <div id="main_logo"><img src="images/main_logo.png"></div>
-                    <div id="scroll"><img src="images/scroll1.gif"></div>
+                <div class="slide" id="slide2">
+                    <!--img1-->
+                    <div id="main_img_bg2">
+                    <!-- main logo -->
+                        <div id="main_box">
+                            <div id="main_logo"><img src="./images/main_logo.png"></div>
+                            <div id="scroll"><img src="./images/scroll1.gif"></div>
+                        </div>
+                    </div>    
+                    <!--img1-->
                 </div>
-            </div>    
-            <!--img1-->
-		</div>
-<div class="slide" id="slide3">
-			<!--img1-->
-            <div id="main_img_bg3">
-            <!-- main logo -->
-                <div id="main_box">
-                    <div id="main_logo"><img src="images/main_logo.png"></div>
-                    <div id="scroll"><img src="images/scroll1.gif"></div>
+                <div class="slide" id="slide3">
+                    <!--img1-->
+                    <div id="main_img_bg3">
+                    <!-- main logo -->
+                        <div id="main_box">
+                            <div id="main_logo"><img src="./images/main_logo.png"></div>
+                            <div id="scroll"><img src="./images/scroll1.gif"></div>
+                        </div>
+                    </div>    
+                    <!--img1-->
                 </div>
-            </div>    
-            <!--img1-->
-		</div>
-<div class="slide" id="slide4">
-			<!--img1-->
-            <div id="main_img_bg4">
-            <!-- main logo -->
-                <div id="main_box">
-                    <div id="main_logo"><img src="images/main_logo.png"></div>
-                    <div id="scroll"><img src="images/scroll1.gif"></div>
+                <div class="slide" id="slide4">
+                    <!--img1-->
+                    <div id="main_img_bg4">
+                    <!-- main logo -->
+                        <div id="main_box">
+                            <div id="main_logo"><img src="./images/main_logo.png"></div>
+                            <div id="scroll"><img src="./images/scroll1.gif"></div>
+                        </div>
+                    </div>    
+                    <!--img1-->
                 </div>
-            </div>    
-            <!--img1-->
-		</div>
-<div class="slide" id="slide5">
-			<!--img1-->
-            <div id="main_img_bg5">
-            <!-- main logo -->
-                <div id="main_box">
-                    <div id="main_logo"><img src="images/main_logo.png"></div>
-                    <div id="scroll"><img src="images/scroll1.gif"></div>
-                </div>
-            </div>    
-            <!--img1-->
-		</div> 
-	</div>
-	
-	<div class="section" id="section1">
-		<!--img2-->
- <div id="main2">
-     <div id="main2_text">
-        <div id="text">
-         <ul>
-             <li><span class="bon">본 이야기</span></li>
-             <li>ABOUT BON</li>
-        </ul>
-        </div>
+                <div class="slide" id="slide5">
+                    <!--img1-->
+                    <div id="main_img_bg5">
+                    <!-- main logo -->
+                        <div id="main_box">
+                            <div id="main_logo"><img src="./images/main_logo.png"></div>
+                            <div id="scroll"><img src="./images/scroll1.gif"></div>
+                        </div>
+                    </div>    
+                    <!--img1-->
+                </div> 
+            </div>
+            
+            <div class="section" id="section1">
+                <!--img2-->
+                <div id="main2">
+                    <div id="main2_text">
+                        <div id="text">
+                        <ul>
+                            <li><span class="bon">본 이야기</span></li>
+                            <li>ABOUT BON</li>
+                        </ul>
+                        </div>
 
-        <div class="clear"></div>
+                        <div class="clear"></div>
 
-        <div id="text2">
-         <p>상생하는 농업을 위해 농촌에 모인 청년들의 이야기<br />본의 모든 것을 알려드립니다.</p>
-        </div>             
-              
-        <ul id="main2_menu">
-           <li><a href="bonstory_1.html"></a></li>
-           <li><a href="bonstory_2.html"></a></li>
-           <li><a href="bonstory_3.html"></a></li>
-           <li><a href="bonstory_4.html"></a></li>            
-        </ul>
-        <div class="clear"></div>
-        <div id="scroll2"><img src="images/scroll2.png"></div>
-         
-      </div>
-</div>
-<!--img2-->
-	</div> 
-	<div class="section" id="section2">
-		<!--img3-->
-<div id="main_img_3">
-  <div id="main_img_3_left">
-   <div id="scroll3"><img src="images/scroll3.png"></div>
-    <h3>본 농장&식품</h3>
-    <ul>
-    <li>본은 신선하고 깨끗한 농작물과 식품만을<br/>
-    생산하고 만들어낼 것을 모든 본을 사랑해주시는<br/>
-     고객님들께 약속드립니다</li>
-    </ul>
-   </div>
-    
-   <div id="main_img_3_right">
-    <ul>
-     <li>
-         <p>
-             <span class="m3_r1">본 농장</span>
-             <span class="m3_r2">본은 건강한 농작물을<br />생산하려 노력합니다</span> 
-         </p>
-    </li>
-     <li>
-         <p>
-             <span class="m3_r1">본 식품</span>
-             <span class="m3_r2">본은 건강한 농작물을<br />생산하려 노력합니다</span> 
-         </p>
-     </li>
-    </ul>
-    </div>
-</div>
- <!--img3--> 
-	</div> 
-	
-	<div class="section " id="section3">
-		<!--img4-->  
-<div id="bon_farm">
-    <div id="farm">
-    
-      <h3>본 농장체험</h3>
-      <p>우리가 먹는 신선한 채소를 직접 키워 볼 수 있는 시간</p>
-       
-     <ul>   
-      <li class="farm_img1"><img src="images/bon_farm_1.jpg"></li>
-      <li class="farm_img1"><img src="images/bon_farm_2.jpg"></li>
-      <li class="farm_img2"><img src="images/bon_farm_3.jpg"></li>
-      <li class="farm_img1"><img src="images/bon_farm_4.jpg"></li> 
-      <li class="farm_img2"><img src="images/bon_farm_5.jpg"></li>
-      <li class="farm_img1"><img src="images/bon_farm_6.jpg"></li>
-      <li class="farm_img1"><img src="images/bon_farm_7.jpg"></li>
-      <li class="farm_img1"><img src="images/bon_farm_8.jpg"></li>
-     </ul>
-    </div>
-    
-    <div class="clear"></div> 
+                        <div id="text2">
+                        <p>상생하는 농업을 위해 농촌에 모인 청년들의 이야기<br />본의 모든 것을 알려드립니다.</p>
+                        </div>             
+                            
+                        <ul id="main2_menu">
+                        <li><a href="./bonstory_1.html"></a></li>
+                        <li><a href="./bonstory_2.html"></a></li>
+                        <li><a href="./bonstory_3.html"></a></li>
+                        <li><a href="./bonstory_4.html"></a></li>            
+                        </ul>
+                        <div class="clear"></div>
+                        <div id="scroll2"><img src="./images/scroll2.png"></div>
+                        
+                    </div>
+                </div>
+            </div> 
+            <div class="section" id="section2">
+                <div id="main_img_3">
+                    <div id="main_img_3_left">
+                        <div id="scroll3"><img src="./images/scroll3.png"></div>
+                        <h3>본 농장&식품</h3>
+                        <ul>
+                        <li>본은 신선하고 깨끗한 농작물과 식품만을<br/>
+                        생산하고 만들어낼 것을 모든 본을 사랑해주시는<br/>
+                        고객님들께 약속드립니다</li>
+                        </ul>
+                    </div>
+                    <div id="main_img_3_right">
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="m3_r1">본 농장</span>
+                                    <span class="m3_r2">본은 건강한 농작물을<br />생산하려 노력합니다</span> 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="m3_r1">본 식품</span>
+                                    <span class="m3_r2">본은 건강한 농작물을<br />생산하려 노력합니다</span> 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-</div>
-    
-<!--img4-->  
-      <? include "inc_footer.html" ?>
+            <!--img3--> 
+            <div class="section " id="section3">
+                    <!--img4-->  
+                <div id="bon_farm">
+                    <div id="farm">
+                    
+                    <h3>본 농장체험</h3>
+                    <p>우리가 먹는 신선한 채소를 직접 키워 볼 수 있는 시간</p>
+                    
+                    <ul>   
+                        <li class="farm_img1"><img src="./images/bon_farm_1.jpg"></li>
+                        <li class="farm_img1"><img src="./images/bon_farm_2.jpg"></li>
+                        <li class="farm_img2"><img src="./images/bon_farm_3.jpg"></li>
+                        <li class="farm_img1"><img src="./images/bon_farm_4.jpg"></li> 
+                        <li class="farm_img2"><img src="./images/bon_farm_5.jpg"></li>
+                        <li class="farm_img1"><img src="./images/bon_farm_6.jpg"></li>
+                        <li class="farm_img1"><img src="./images/bon_farm_7.jpg"></li>
+                        <li class="farm_img1"><img src="./images/bon_farm_8.jpg"></li>
+                    </ul>
+                    </div>
+                    
+                    <div class="clear"></div> 
+                </div>
+                <footer id="footer"></footer>
+            </div> 
+            <!-- <div class="section " id="section4">
+                <footer id="footer"></footer>
+            </div> -->
+        </div> 
+    </div> 
+    <script type="text/javascript">
+        $(function(){
+            $(".section").css('height','calc(var(--vh,1vh)*100 - 160px)'); 
+        });
+    </script>
+</body>
+</html>
+

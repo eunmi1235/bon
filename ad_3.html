@@ -1,12 +1,41 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu4.html" ?>
-              <section>
-                <div id="sub_subtitle">
-                    <p>농장견학<br /><span>아쿠아포닉스 농법으로 재배하는 본 농장에서 견학</span></p>
-                </div>
-            </section>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-        <div id="content">
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
+
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu4.html"); 
+    });
+</script> 
+</head> 
+<body> 
+    <header id="header"></header>
+    <div id="contents"></div>
+    <section>
+        <div id="sub_subtitle">
+            <p>농장견학<br /><span>아쿠아포닉스 농법으로 재배하는 본 농장에서 견학</span></p>
+        </div>
+    </section> 
+
+    <div id="content">
         <div id="img">
             <ul>
                 <li><img src="images/q2.jpg"></li>
@@ -18,86 +47,85 @@
         <div class="clear"></div>
 
         <div id="content">
-        <div id="event1">
-            <ul>
-             <li class="a"><img src=images/a1.png></li>
-             <li class="a"><img src=images/a2.png></li>
-             <li class="a"><img src=images/a3.png></li>
-            </ul>
+            <div id="event1">
+                <ul>
+                <li class="a"><img src=images/a1.png></li>
+                <li class="a"><img src=images/a2.png></li>
+                <li class="a"><img src=images/a3.png></li>
+                </ul>
 
-            <ul>
-                <li><a href="#">본(BON) 농장 견학 소개</a></li>
-                <li><a href="#">본(BON) 농장 예약</a></li>
-                <li><a href="#">본(BON) 농장 후기</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#">본(BON) 농장 견학 소개</a></li>
+                    <li><a href="#">본(BON) 농장 예약</a></li>
+                    <li><a href="#">본(BON) 농장 후기</a></li>
+                </ul>
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="green_bar"></div>
+
+                <div class="clear"></div>
+
+                <div id="event_text">
+                <h3>본(BON)  농장견학 소개</h3>
+                    <p><span class="blue">채소와 물고기가 공생</span>하며 건강하게 자라는 자연 생태계를 닮은 <span class="blue">수경재배 ICT농장입니다.</span></p>
+                    <p>관리된 최적의 환경에서 40여 종 이상의 채소가 깨끗하고 안전하게 자라납니다.</p>
+                    <h2>본 농장만의 체계 3가지!</h2>
+                    <p><span class="black">1.</span> 자연을 닮은 아쿠아포닉스 농법 양어 수경재배를 뜻하는<span class="blue"> 아쿠아포닉스 농법</span>은<br>
+            합성비료 대신 물고기 배설물을 영양분으로 채소들이 자라고, 채소가 정화해 준 물에서<br>
+            다시 물고기가 살아가는 선순환 농법입니다.</p>
+
+                    <p><span class="black">2.</span><span class="blue"> 농약 및 합성비료 사용 불가!<br></span>
+            물고기와 식물이 함께 자라기 때문에 합성비료를 일절 사용할 수 없습니다.<br>
+            합성비료 대신 자연적인 미생물 분해과정의 영양분과 천적을 이용합니다.</p>
+
+                    <p><span class="black">3.</span> 착한 물 사용법<br>
+                    식물이 정화해 준 물을 버리지 않고<span class="blue"> 다시 순환</span> 사용합니다.<br>
+                    일반 노지재배 대비 <span class="blue">1/20</span>의 물을 사용하며 <span class="blue">절약</span>을 실천하고 있습니다.<br></p>
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="course">
+                    <ul>
+                    <li><img src=images/z3.png></li>
+                    </ul>
+
+                    <ul>
+                        <li class="m">9:30~<br>집결 및 버스 탑승</li>
+                        <li class="m">9:30~11:00<br>본 농장으로 이동</li>
+                        <li class="m">11:00~12:00<br>안전교육 및 오리엔테이션</li>
+                    </ul>
+
+                    <ul>
+                        <li class="d">12:00~13:00<br>본 농장에서 점심식사</li>
+                        <li class="d">13:00~17:00<br>농장체험 및 채소 및 과일 쿠킹 클래스</li>
+                        <li class="r">17:00~<br>집결지로 돌아감.</li>
+                    </ul>
             </div>
-
-            <div class="clear"></div>
-
-            <div id="green_bar"></div>
-
-            <div class="clear"></div>
-
-            <div id="event_text">
-            <h3>본(BON)  농장견학 소개</h3>
-                <p><span class="blue">채소와 물고기가 공생</span>하며 건강하게 자라는 자연 생태계를 닮은 <span class="blue">수경재배 ICT농장입니다.</span></p>
-                <p>관리된 최적의 환경에서 40여 종 이상의 채소가 깨끗하고 안전하게 자라납니다.</p>
-                <h2>본 농장만의 체계 3가지!</h2>
-                <p><span class="black">1.</span> 자연을 닮은 아쿠아포닉스 농법 양어 수경재배를 뜻하는<span class="blue"> 아쿠아포닉스 농법</span>은<br>
-합성비료 대신 물고기 배설물을 영양분으로 채소들이 자라고, 채소가 정화해 준 물에서<br>
-    다시 물고기가 살아가는 선순환 농법입니다.</p>
-
-                <p><span class="black">2.</span><span class="blue"> 농약 및 합성비료 사용 불가!<br></span>
-물고기와 식물이 함께 자라기 때문에 합성비료를 일절 사용할 수 없습니다.<br>
-    합성비료 대신 자연적인 미생물 분해과정의 영양분과 천적을 이용합니다.</p>
-
-                <p><span class="black">3.</span> 착한 물 사용법<br>
-                식물이 정화해 준 물을 버리지 않고<span class="blue"> 다시 순환</span> 사용합니다.<br>
-                일반 노지재배 대비 <span class="blue">1/20</span>의 물을 사용하며 <span class="blue">절약</span>을 실천하고 있습니다.<br></p>
-            </div>
-
-            <div class="clear"></div>
-
-            <div id="course">
-                <ul>
-                <li><img src=images/z3.png></li>
-                </ul>
-
-                <ul>
-                    <li class="m">9:30~<br>집결 및 버스 탑승</li>
-                    <li class="m">9:30~11:00<br>본 농장으로 이동</li>
-                    <li class="m">11:00~12:00<br>안전교육 및 오리엔테이션</li>
-                </ul>
-
-                <ul>
-                    <li class="d">12:00~13:00<br>본 농장에서 점심식사</li>
-                    <li class="d">13:00~17:00<br>농장체험 및 채소 및 과일 쿠킹 클래스</li>
-                    <li class="r">17:00~<br>집결지로 돌아감.</li>
-                </ul>
-           </div>
 
             <div class="clear"></div>
 
             <div id="course_text">
-                 <ul>
+                <ul>
                     <li>※ 현지 사정에 따라 스케쥴이 달라 질 수 있습니다.</li>
                     <li>※ 출발 시간은 출발지에 따라 변경 될 수 있습니다.</li>
-                     <li class="c1"><img src="images/q7.jpg"></li>
+                    <li class="c1"><img src="images/q7.jpg"></li>
                 </ul>
             </div>
 
-             <div class="clear"></div>
+            <div class="clear"></div>
 
                         <div id="textbox">
-              <ul>
-                  <li><a href="#">개인신청하기</a></li>
-                  <li><a href="#">단체신청하기</a></li>
-                  <li><a href="#">신청조회 / 수정 / 삭제</a></li>
-              </ul>
-            </div>
-
-
-    <div class="clear"></div>
+            <ul>
+                <li><a href="#">개인신청하기</a></li>
+                <li><a href="#">단체신청하기</a></li>
+                <li><a href="#">신청조회 / 수정 / 삭제</a></li>
+            </ul>
         </div>
-
-<? include "inc_footer.html" ?>
+        <div class="clear"></div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>

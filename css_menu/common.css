@@ -52,10 +52,12 @@ caption { position:absolute; left:-9999px; }
 #gnb .gnb_depth1:hover ~ .gnb_depth2 ~ .dimd,
 #gnb .gnb_depth1 ~ .gnb_depth2:hover ~ .dimd { display:block; }
  
- 
+#fp-nav ul li .fp-tooltip {
+    color:#234728; 
+}
 
 
-#contents{width:100%; padding-top:135px;}
+#contents{width:100%; margin-top:160px;}
 #contents > .tit { position:relative; z-index:100; height:550px; box-sizing:border-box; overflow:hidden; }
 #contents > .tit:after { content:""; display:inline-block; height:100%; vertical-align:middle; }
 #contents > .tit img { position:absolute; z-index:10; top:0; left:50%; transform:translateX(-50%); }

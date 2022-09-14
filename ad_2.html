@@ -1,70 +1,100 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu4.html" ?>
-               <section>
-                <div id="sub_subtitle">
-                    <p>SNS<br /><span>본(BON) 소셜네트워크</span></p>
-                </div>
-            </section>
-            
-        <div id="sns_box">
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
+
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu4.html"); 
+    });
+</script> 
+</head> 
+<body> 
+    <header id="header"></header>
+    <div id="contents"></div>
+    <section>
+        <div id="sub_subtitle">
+            <p>SNS<br /><span>본(BON) 소셜네트워크</span></p>
+        </div>
+    </section>
+    
+    <div id="sns_box">
+
+    <div id="sns1">
+        <p>YOUTUBE @ BON</p>
+    </div>
         
-        <div id="sns1">
-            <p>YOUTUBE @ BON</p>
-         </div>
-            
-        <div class="clear"></div>
-            <div id="youtube">
-                <ul>
-                    <li><img src="images/sns_05.jpg"></li>
-                    <li><img src="images/sns_07.jpg"></li>
-                </ul>
-            </div>
-
-            <div class="clear"></div>
-
-            <div id="bar"></div>
-
-            <div class="clear"></div>
-
-            <div id="sns1">
-            <p>INSTARGRAM @ BON</p>
-            </div>
-            
-        <div class="clear"></div>
-           
-            <div id="instar">
-                <ul>
-                <li><img src="images/sns_11.jpg"></li>
-                <li><img src="images/sns_13.jpg"></li>
-                <li><img src="images/sns_15.jpg"></li>
-                <li><img src="images/sns_17.jpg"></li>
-                <li><img src="images/sns_19.jpg"></li>
-                </ul>
-            </div>
-
-            <div class="clear"></div>
-
-            <div id="bar"></div>
-
-            <div class="clear"></div>
-
-            <div id="sns1">
-            <p>FACEBOOK @ BON</p>
-            </div>
-            
-        <div class="clear"></div>
-           
-            <div id="facebook">
-                <ul>
-                <li><img src="images/sns_26.jpg"></li>
-                <li><img src="images/sns_29.jpg"></li>
-                <li><img src="images/sns_31.jpg"></li>
-                <li><img src="images/sns_33.jpg"></li>
-                </ul>
-            </div>
-
-            <div class="clear"></div>
-
+    <div class="clear"></div>
+        <div id="youtube">
+            <ul>
+                <li><img src="images/sns_05.jpg"></li>
+                <li><img src="images/sns_07.jpg"></li>
+            </ul>
         </div>
 
-<? include "inc_footer.html" ?>
+        <div class="clear"></div>
+
+        <div id="bar"></div>
+
+        <div class="clear"></div>
+
+        <div id="sns1">
+        <p>INSTARGRAM @ BON</p>
+        </div>
+        
+    <div class="clear"></div>
+    
+        <div id="instar">
+            <ul>
+            <li><img src="images/sns_11.jpg"></li>
+            <li><img src="images/sns_13.jpg"></li>
+            <li><img src="images/sns_15.jpg"></li>
+            <li><img src="images/sns_17.jpg"></li>
+            <li><img src="images/sns_19.jpg"></li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="bar"></div>
+
+        <div class="clear"></div>
+
+        <div id="sns1">
+        <p>FACEBOOK @ BON</p>
+        </div>
+        
+    <div class="clear"></div>
+    
+        <div id="facebook">
+            <ul>
+            <li><img src="images/sns_26.jpg"></li>
+            <li><img src="images/sns_29.jpg"></li>
+            <li><img src="images/sns_31.jpg"></li>
+            <li><img src="images/sns_33.jpg"></li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>

@@ -1,75 +1,94 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu3.html" ?>
-               <section>
-                <div id="sub_subtitle">
-                    <p>건강주스<br /><span>그날의 신선한 건강쥬스을 만나보세요.</span></p>
-                </div>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-              <div class="clear"></div>
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
 
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu3.html"); 
+    });
+</script> 
+</head> 
+<body>
+  <header id="header"></header>
+  <div id="contents"></div> 
 
-              <div id="j_c1">
-                    <p><img src="images/fruit_juice_1.jpg"></p>
+  <section>
+    <div id="sub_subtitle">
+        <p>건강주스<br /><span>그날의 신선한 건강쥬스을 만나보세요.</span></p>
+    </div>
 
-                    <p>케일 사과 주스 / 코코넛 아몬드<br/>
-                    주스 / 딸기 오렌지 키위 주스/ <br/>
-                    오렌지 자두 블루베리 딸기 주스<br/>
-                    / 자색 고구마 오이 치아씨드 주스 </p>
+    <div class="clear"></div>
 
-            </div>
+    <div id="j_c1">
+      <p><img src="images/fruit_juice_1.jpg"></p>
 
+      <p>케일 사과 주스 / 코코넛 아몬드<br/>
+      주스 / 딸기 오렌지 키위 주스/ <br/>
+      오렌지 자두 블루베리 딸기 주스<br/>
+      / 자색 고구마 오이 치아씨드 주스 </p>
+    </div>
+    <div class="clear"></div>
 
-              <div class="clear"></div>
+    <div id="j_c2">
+      <ul>
+        <li></li>
+        <li>케일 사과 주스</li>
+      </ul>
 
+      <p>세계보건기구(WHO)가 '최고의 채소'로 꼽는 케일은 잘 알려진 항암효과 외에도 수많은 효능을 자랑합니다.<br/>케일의 영양성분은 열에 약하기 때문에 생으로 갈아 마시는 것이 체내 흡수에 가장 효과적입니다. </p>
+      <h4>“ 만나농장에서 온 신선한 케일로 건강한 아침을 시작하세요. ” </h4>
+    </div>
+    <div id="j_img"></div>
 
-
-          <div id="j_c2">
-              <ul>
-              <li></li>
-              <li>케일 사과 주스</li>
-              </ul>
-
-             <p>세계보건기구(WHO)가 '최고의 채소'로 꼽는 케일은 잘 알려진 항암효과 외에도 수많은 효능을 자랑합니다.<br/>케일의 영양성분은 열에 약하기 때문에 생으로 갈아 마시는 것이 체내 흡수에 가장 효과적입니다. </p>
-             <h4>“ 만나농장에서 온 신선한 케일로 건강한 아침을 시작하세요. ” </h4>
-
-          </div>
-
-
-
-
-          <div id="j_img"></div>
-
-
-           <div class="clear"></div>
-
-          <div id="j_c3">
-
-             <ul>
-             <li></li>
-             <li>본 농장 케일의 특장점</li>
-            </ul>
-
-            <div class="clear"></div>
-
-             <h4>USDA Organic 인증</h4>
-             <p>만나농장의 채소는 아쿠아포닉스 농산물로는<br/>
-아시아 최초로 미국 농무부(USDA)의 Organic 인증을 받은 안전하고 믿을 수 있는 채소입니다.</p>
-           </div>
-
-            <div id="j_c4">
-            <h4>프리미엄 케일</h4>
-             <p>만나박스의 케일은 잎이 연하며 맛과 영양이 뛰어납니다.<br/>
-             6종 이상의 고급 케일 중 그 주에 가장 신선한 3종으로 랜덤 구성됩니다.</p>
-          </div>
-
-
-     <div class="clear"></div>
-
-          <div id="s_button">
-             <p><span>스토어</span>에서 <span>신선한 주스</span> 만나기</p>
-             </div>
 
       <div class="clear"></div>
 
-       </section>
-<? include "inc_footer.html" ?>
+    <div id="j_c3">
+
+        <ul>
+        <li></li>
+        <li>본 농장 케일의 특장점</li>
+      </ul>
+
+      <div class="clear"></div>
+
+        <h4>USDA Organic 인증</h4>
+        <p>만나농장의 채소는 아쿠아포닉스 농산물로는<br/>
+아시아 최초로 미국 농무부(USDA)의 Organic 인증을 받은 안전하고 믿을 수 있는 채소입니다.</p>
+      </div>
+
+      <div id="j_c4">
+      <h4>프리미엄 케일</h4>
+        <p>만나박스의 케일은 잎이 연하며 맛과 영양이 뛰어납니다.<br/>
+        6종 이상의 고급 케일 중 그 주에 가장 신선한 3종으로 랜덤 구성됩니다.</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="s_button">
+      <p><span>스토어</span>에서 <span>신선한 주스</span> 만나기</p>
+    </div>
+
+    <div class="clear"></div>
+  </section>
+  <footer id="footer"></footer>
+</body>
+</html>

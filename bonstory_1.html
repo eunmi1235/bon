@@ -1,60 +1,83 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu1.html" ?>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
+
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu1.html"); 
+    });
+</script> 
+</head> 
+<body> 
+    <header id="header"></header>
+    <div id="contents"></div>
         <section>
-                <div id="sub_subtitle">
-                    <p>인사말<br /><span>채소를 통해 미래를 만듭니다.</span></p>
-                </div>
+            <div id="sub_subtitle">
+                <p>인사말<br /><span>채소를 통해 미래를 만듭니다.</span></p>
+            </div>
             <div id="sub_hello_1">
                <h3>인간과 자연을 함께 사랑하는 본 기업입니다</h3>
                 <p>백년에 이르는 생애 동안 이기주의를 벗고 인간과 인간, 인간과 자연이 서로 조화롭게 살 수 있는 길을 찾아 끊임없이 도전했던 농부 원경선.
 본 정신은 스스로 일군  본 농장에서 유기농을 통해 이웃사랑, 생명존중을 실천하고, 나아가 전쟁 없는 세상, 세계 평화를 널리 알리고 인도하는 데 한평생을 바쳤던 위대한 농부이자 성실한 평화주의자 원경선으로부터 시작됩니다.  </p>
 
-           <p>본 이 ‘내 가족이 안심하고 먹을 바른먹거리’에서부터 한결같이 추구해온 ‘나와 내 가족의 건강과 행복, 더 나아가 지구환경의 건강까지 두루 살피는 본’ 은 이제 이 시대의 보편타당한 가치가 되어 우리의 일상에 공기처럼 스며들고 있습니다. 건강과 지구환경의 지속가능한 발전을 생각하며 사는 생활양식을 뜻합니다.</p>
-            </div>
+                <p>본 이 ‘내 가족이 안심하고 먹을 바른먹거리’에서부터 한결같이 추구해온 ‘나와 내 가족의 건강과 행복, 더 나아가 지구환경의 건강까지 두루 살피는 본’ 은 이제 이 시대의 보편타당한 가치가 되어 우리의 일상에 공기처럼 스며들고 있습니다. 건강과 지구환경의 지속가능한 발전을 생각하며 사는 생활양식을 뜻합니다.</p>
+           </div>
 
 
-    <div id="gray_box">
-        <ul>
-        <li><img src="images/sub_lohas.png"></li>
+        <div id="gray_box">
+            <ul>
+            <li><img src="images/sub_lohas.png"></li>
+            </ul>
+
+            <ul>
+            <li>저희 회사의 미션인 <span>‘ 인간과 자연을 함께 사랑하는 로하스기업 ’</span> 를<br/> 실천하기 위함입니다.<br/>
+            본 은 시작부터 ‘건강한 삶과 지구환경의 지속가능성을 추구하는 라이프스타일’을 뜻하는<br/>
+            <span>‘ 로하스 (LOHAS, Lifestyles Of Health And Sustainability) ’</span> 기업이었습니다.</li>
+
+            <li><span>로하스 미션</span>은<br/>
+            ‘한국 유기농의 아버지’로 불리는 본 농장 원경선원장의 ‘이웃사랑과 생명존중의 정신’을 이어받은 것입니다.<br/>  본 은 한국에서 가장 존경받는 기업에 11년 연속, 대한민국 사회가치 최우수 기업에 2년 연속 선정되었습니다.<br/> 한국기업지배구조원이 환경경영(Environment), 사회책임경영(Social), 지배구조(Governance) 등 비재무적<br/> 성과를 평가하는 ESG평가에서 식품기업중 유일하게 통합 A+등급을 받아 전체 852개 상장기업중 TOP5의<br/> 지속가능경영 우수성을 인정받았습니다. </li>
         </ul>
 
-        <ul>
-        <li>저희 회사의 미션인 <span>‘ 인간과 자연을 함께 사랑하는 로하스기업 ’</span> 를<br/> 실천하기 위함입니다.<br/>
-        본 은 시작부터 ‘건강한 삶과 지구환경의 지속가능성을 추구하는 라이프스타일’을 뜻하는<br/>
-        <span>‘ 로하스 (LOHAS, Lifestyles Of Health And Sustainability) ’</span> 기업이었습니다.</li>
-
-        <li><span>로하스 미션</span>은<br/>
-        ‘한국 유기농의 아버지’로 불리는 본 농장 원경선원장의 ‘이웃사랑과 생명존중의 정신’을 이어받은 것입니다.<br/>  본 은 한국에서 가장 존경받는 기업에 11년 연속, 대한민국 사회가치 최우수 기업에 2년 연속 선정되었습니다.<br/> 한국기업지배구조원이 환경경영(Environment), 사회책임경영(Social), 지배구조(Governance) 등 비재무적<br/> 성과를 평가하는 ESG평가에서 식품기업중 유일하게 통합 A+등급을 받아 전체 852개 상장기업중 TOP5의<br/> 지속가능경영 우수성을 인정받았습니다. </li>
-       </ul>
-
-    </div>
+        </div>
 
                
-               <div class="clear"></div>
+        <div class="clear"></div>
                
 
-               <div id="sub_hello_2">
-               <h3>이웃사랑 정신은, 자연 그대로 신선하고 안전한 먹거리를 전하고자 하는 마음입니다.</h3>
-                <p>사람(본)과 사람(고객)과의 약속이며, 내 가족이 안심하고 먹을 수 있는 바른먹거리를 만들겠다는 본의 의지입니다.  생명존중의 정신은, 이웃사랑 정신을 구현하기 위해 생명의 근원인 자연을 사랑하고 살리고자 하는 마음입니다. 작은 생명도 마음 놓고 살아갈 수 있는 자연환경을 가꾸어 나가겠다는 사람과 자연과의 약속입니다. 자연을 자연답게 살려야 사람이 사람답게 살 수 있습니다.  존경하는 고객 여러분! 여러분의 사랑과 성원에 힘입어 본 은 한국에서 가장 신뢰받고 존경받는 브랜드로 성장하였습니다. 저희 임직원들은 여러분의 기대에 보답하기 위해 올해도 ‘나와 지구를 위한 바른먹거리와 건강생활’을 위해 최선을 다하겠습니다.  여러분의 변함없는 격려와 성원을 부탁드립니다. 새해 소망하는 일이 모두 이루어지고 언제나 건강과 행복이 함께 하기를 기원합니다.<br/><br/>감사합니다.</p>
-            </div>
+        <div id="sub_hello_2">
+            <h3>이웃사랑 정신은, 자연 그대로 신선하고 안전한 먹거리를 전하고자 하는 마음입니다.</h3>
+            <p>사람(본)과 사람(고객)과의 약속이며, 내 가족이 안심하고 먹을 수 있는 바른먹거리를 만들겠다는 본의 의지입니다.  생명존중의 정신은, 이웃사랑 정신을 구현하기 위해 생명의 근원인 자연을 사랑하고 살리고자 하는 마음입니다. 작은 생명도 마음 놓고 살아갈 수 있는 자연환경을 가꾸어 나가겠다는 사람과 자연과의 약속입니다. 자연을 자연답게 살려야 사람이 사람답게 살 수 있습니다.  존경하는 고객 여러분! 여러분의 사랑과 성원에 힘입어 본 은 한국에서 가장 신뢰받고 존경받는 브랜드로 성장하였습니다. 저희 임직원들은 여러분의 기대에 보답하기 위해 올해도 ‘나와 지구를 위한 바른먹거리와 건강생활’을 위해 최선을 다하겠습니다.  여러분의 변함없는 격려와 성원을 부탁드립니다. 새해 소망하는 일이 모두 이루어지고 언제나 건강과 행복이 함께 하기를 기원합니다.<br/><br/>감사합니다.</p>
+        </div>
 
-            <div class="clear"></div>
-               
-               
-                <div id="sub_hello_3">
-                <ul>
+        <div class="clear"></div>
+            
+            
+        <div id="sub_hello_3">
+            <ul>
                 <li>2018년 04월 30일</li>
                 <li>(주)  본 공동 CEO  이은미, 임세현, 황주은</li>
-               </ul>
-                </div>
-
-
-
-
-
+            </ul>
+        </div>
     </section>
-
-
-
 <div class="clear"></div>
-<? include "inc_footer.html" ?>
+<footer id="footer"></footer>
+</body>
+</html>

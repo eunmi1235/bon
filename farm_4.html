@@ -1,32 +1,62 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu2.html" ?>    
-        <section>
-                <div id="sub_subtitle">
-                    <p>가축<br /><span>가축에게는 자유를 건강한 방목농장</span></p>
-                </div>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-            <div id=sub_ne_title>
-                <ul>
-                    <li> </li>
-                    <li>본 가축<span>은 모든 가축들이 건강하게</span><br /><span>뛰어 다닐 수 있는 </span>방목농장<span>을 고집합니다.</span></li>
-                    <li>저희 본 가축에서는 <span>'가축들에게는 자유를 자신에게는 철저한 계획사육'</span>의<br />마인드를 가지신 농장 대표님들과 함께하고 있습니다.</li>
-                    <li><img src="images/f4_ne_05.png"></li>
-                    <li> </li>
-                </ul>
-            </div>
-            <div id="sub_ne_img">
-                <ul>
-                   <li><img src="images/f4_img_09.png"></li>
-                </ul>
-            </div>
-            <div class="clear"> </div>
-            <div id="store">
-                <ul>
-                    <li><a href="#"><span>스토어</span>에서<span> 건강한 육</span> 만나기</a></li>
-                </ul>
-            </div>
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
 
-        </section>
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu2.html"); 
+    });
+</script> 
+</head> 
+<body>
+    <header id="header"></header>
+    <div id="contents"></div> 
+    <section>
+        <div id="sub_subtitle">
+            <p>가축<br /><span>가축에게는 자유를 건강한 방목농장</span></p>
+        </div>
+
+        <div id=sub_ne_title>
+            <ul>
+                <li> </li>
+                <li>본 가축<span>은 모든 가축들이 건강하게</span><br /><span>뛰어 다닐 수 있는 </span>방목농장<span>을 고집합니다.</span></li>
+                <li>저희 본 가축에서는 <span>'가축들에게는 자유를 자신에게는 철저한 계획사육'</span>의<br />마인드를 가지신 농장 대표님들과 함께하고 있습니다.</li>
+                <li><img src="images/f4_ne_05.png"></li>
+                <li> </li>
+            </ul>
+        </div>
+        <div id="sub_ne_img">
+            <ul>
+            <li><img src="images/f4_img_09.png"></li>
+            </ul>
+        </div>
         <div class="clear"> </div>
-
-<? include "inc_footer.html" ?>
+        <div id="store">
+            <ul>
+                <li><a href="#"><span>스토어</span>에서<span> 건강한 육</span> 만나기</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="clear"> </div>
+    <footer id="footer"></footer>
+</body>
+</html>
+        

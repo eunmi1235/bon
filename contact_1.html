@@ -1,107 +1,138 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu6.html" ?>
-              <section>
-                <div id="sub_subtitle">
-                    <p>공지사항 <img src=images/c27.png><br /><span>본(BON) 공지사항</span></p>
-                </div>
-            </section>
-        <div id="content">
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-        <div id="choice">
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
+
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu6.html"); 
+    });
+</script> 
+</head> 
+<body>
+    <header id="header"></header>
+    <div id="contents"></div> 
+    <section>
+        <div id="sub_subtitle">
+            <p>공지사항 <img src=images/c27.png><br /><span>본(BON) 공지사항</span></p>
+        </div>
+    </section>
+    <div id="content">
+
+    <div id="choice">
+    <ul>
+    <li><input type="radio" name="fruit" value="이름" checked="checked"/>이름</li>
+    <li><input type="radio" name="fruit" value="제목" /> 제목</li>
+    <li><input type="radio" name="fruit" value="내용"  /> 내용 </li>
+    </ul>
+
         <ul>
-            <li><input type="radio" name="fruit" value="이름" checked="checked"/>이름</li>
-            <li><input type="radio" name="fruit" value="제목" /> 제목</li>
-            <li><input type="radio" name="fruit" value="내용"  /> 내용 </li>
-             </ul>
+            <li><input type="text" name="serch" value="" /></li>
+            <li><a href="">검 색</a></li>
+        </ul>
 
-                <ul>
-                    <li><input type="text" name="serch" value="" /></li>
-                    <li><a href="">검 색</a></li>
-                </ul>
-
-        </div>
-
-            <div class="clear"></div>
-
-            <table id="a1">
-            <tr>
-            <td>번호</td>
-            <td>제목</td>
-            <td>등록일</td>
-            </tr>
-
-            <tr>
-            <td><img src="images/9.jpg"></td>
-                <td><a href="#">금주의 품목 안내페이지</a></td>
-            <td> 2018.05.14</td>
-            </tr>
-
-            <tr>
-            <td><img src="images/9.jpg"></td>
-                <td class="t"><a href="#">주문 마감 시간 연장 -  오후 7시</a></td>
-            <td> 2018.05.10</td>
-            </tr>
-
-            <tr>
-            <td>6</td>
-                <td><a href="#">5월, 6월 공휴일 정기배송 휴무안내</a></td>
-            <td>2018.05.11</td>
-            </tr>
-
-                <tr>
-            <td>5</td>
-                    <td><a href="#">5월 5일, 5월 7일 공휴일 정기배송 휴무안내  hot</a></td>
-            <td>2018.04.30</td>
-            </tr>
-
-            <tr>
-            <td>4</td>
-            <td><a href="#">금주의 품목의 안내페이지</a></td>
-            <td>2018.04.19</td>
-            </tr>
-
-            <tr>
-            <td>3</td>
-            <td><a href="#"><span>[발표]</span> 이 주의 #마이 본 베스트 리뷰</a></td>
-            <td>2018.04.04</td>
-            </tr>
-
-            <tr>
-            <td>2</td>
-                <td><a href="#">본(BON) 조류 인플루엔자에 대해 안전합니다.</a></td>
-            <td> 2018.03.16</td>
-            </tr>
-
-            <tr>
-            <td>1</td>
-            <td><a href="#">주문 마감 시간 연장 - 오후7시</a></td>
-            <td> 2018.01.31</td>
-            </tr>
-             </table>
-
-            <div class="clear"></div>
-
-            <div id="button">
-             <ul>
-                 <li><a href="#">1</a></li>
-                <li>|</li>
-                 <li><a href="#">2</a></li>
-                <li>|</li>
-                 <li><a href="#">3</a></li>
-                </ul>
-            </div>
-
-            <div class="clear"></div>
-
-            <div id="write">
-            <ul>
-                <li><a href="#">글쓰기</a></li>
-                </ul>
-            <ul>
-                <li><a href="#">목록</a></li>
-                </ul>
-            </div>
-        </div>
+    </div>
 
     <div class="clear"></div>
-<? include "inc_footer.html" ?>
+
+    <table id="a1">
+    <tr>
+    <td>번호</td>
+    <td>제목</td>
+    <td>등록일</td>
+    </tr>
+
+    <tr>
+    <td><img src="images/9.jpg"></td>
+        <td><a href="#">금주의 품목 안내페이지</a></td>
+    <td> 2018.05.14</td>
+    </tr>
+
+    <tr>
+    <td><img src="images/9.jpg"></td>
+        <td class="t"><a href="#">주문 마감 시간 연장 -  오후 7시</a></td>
+    <td> 2018.05.10</td>
+    </tr>
+
+    <tr>
+    <td>6</td>
+        <td><a href="#">5월, 6월 공휴일 정기배송 휴무안내</a></td>
+    <td>2018.05.11</td>
+    </tr>
+
+        <tr>
+    <td>5</td>
+            <td><a href="#">5월 5일, 5월 7일 공휴일 정기배송 휴무안내  hot</a></td>
+    <td>2018.04.30</td>
+    </tr>
+
+    <tr>
+    <td>4</td>
+    <td><a href="#">금주의 품목의 안내페이지</a></td>
+    <td>2018.04.19</td>
+    </tr>
+
+    <tr>
+    <td>3</td>
+    <td><a href="#"><span>[발표]</span> 이 주의 #마이 본 베스트 리뷰</a></td>
+    <td>2018.04.04</td>
+    </tr>
+
+    <tr>
+    <td>2</td>
+        <td><a href="#">본(BON) 조류 인플루엔자에 대해 안전합니다.</a></td>
+    <td> 2018.03.16</td>
+    </tr>
+
+    <tr>
+    <td>1</td>
+    <td><a href="#">주문 마감 시간 연장 - 오후7시</a></td>
+    <td> 2018.01.31</td>
+    </tr>
+    </table>
+
+    <div class="clear"></div>
+
+    <div id="button">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li>|</li>
+        <li><a href="#">2</a></li>
+        <li>|</li>
+        <li><a href="#">3</a></li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="write">
+    <ul>
+        <li><a href="#">글쓰기</a></li>
+        </ul>
+    <ul>
+        <li><a href="#">목록</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="clear"></div>
+    <footer id="footer"></footer>
+</body>
+</html>

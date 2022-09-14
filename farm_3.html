@@ -1,32 +1,62 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu2.html" ?>
-        <section>
-                <div id="sub_subtitle">
-                    <p>과일<br /><span>진짜 맛있는 제철과일을 찾다</span></p>
-                </div>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-            <div id=sub_ne_title>
-                <ul>
-                    <li> </li>
-                    <li>본 과일<span>은</span> 지역별 특산품<br /><span>및</span> 제철과일<span>을 고집합니다.</span></li>
-                    <li><span>더 많은 과일</span>을 드실 수 있도록 <span>본 협력농가</span>를 꾸준히 발굴하고 찾아다니며<br />단순한 제철과일이 아닌 과일이 <span>진짜 맛있는 제철</span>을 맞춰 공급하고 있습니다.</li>
-                    <li><img src="images/f3_ne_05.png"></li>
-                    <li> </li>
-                </ul>
-            </div>
-            <div id="sub_ne_img">
-                <ul>
-                   <li><img src="images/f3_img_09.png"></li>
-                </ul>
-            </div>
-            <div class="clear"> </div>
-            <div id="store">
-                <ul>
-                    <li><a href="#"><span>스토어</span>에서<span> 맛있는 과일</span> 만나기</a></li>
-                </ul>
-            </div>
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
 
-        </section>
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu2.html"); 
+    });
+</script> 
+</head> 
+<body>
+    <header id="header"></header>
+    <div id="contents"></div> 
+    <section>
+        <div id="sub_subtitle">
+            <p>과일<br /><span>진짜 맛있는 제철과일을 찾다</span></p>
+        </div>
+
+        <div id=sub_ne_title>
+            <ul>
+                <li> </li>
+                <li>본 과일<span>은</span> 지역별 특산품<br /><span>및</span> 제철과일<span>을 고집합니다.</span></li>
+                <li><span>더 많은 과일</span>을 드실 수 있도록 <span>본 협력농가</span>를 꾸준히 발굴하고 찾아다니며<br />단순한 제철과일이 아닌 과일이 <span>진짜 맛있는 제철</span>을 맞춰 공급하고 있습니다.</li>
+                <li><img src="images/f3_ne_05.png"></li>
+                <li> </li>
+            </ul>
+        </div>
+        <div id="sub_ne_img">
+            <ul>
+            <li><img src="images/f3_img_09.png"></li>
+            </ul>
+        </div>
         <div class="clear"> </div>
+        <div id="store">
+            <ul>
+                <li><a href="#"><span>스토어</span>에서<span> 맛있는 과일</span> 만나기</a></li>
+            </ul>
+        </div>
 
-<? include "inc_footer.html" ?>
+    </section>
+    <div class="clear"> </div>
+    <footer id="footer"></footer>
+</body>
+</html>

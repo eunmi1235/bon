@@ -1,37 +1,67 @@
-<? include "inc_header.html" ?>
-<? include "inc_submenu2.html" ?>
-        <section>
-                <div id="sub_subtitle">
-                    <p>NEW<br /><span>새로온 맛있는 친구들을 만나보세요</span></p>
-                </div>
+<!DOCTYPE html>
+<html lang="ko">  
+<head> 
+<title>본(bon)-frash and clean</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css_menu/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./css_menu/common.css" /> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-            <div id=sub_ne_title>
-                <ul>
-                    <li><img src="images/new_05.png"></li>
-                    <li>구하기 힘든 특수 채소로<br /><span>이국적인 식탁 만들기</span></li>
-                    <li>요리를 즐겁게! 이제 특수채소도 본에서 만나보세요!</li>
-                </ul>
-            </div>
-            <div id="sub_ne_img">
-                <ul>
-                    <li><img src="images/f1imgs_09.png"></li>
-                    <li><img src="images/f1imgs_11.png"></li>
-                    <li><img src="images/f1imgs_13.png"></li>
-                    <li><img src="images/f1imgs_15.png"></li>
-                    <li><img src="images/f1imgs_22.png"></li>
-                    <li><img src="images/f1imgs_24.png"></li>
-                    <li><img src="images/f1imgs_25.png"></li>
-                    <li><img src="images/f1imgs_26.png"></li>
-                </ul>
-            </div>
-            <div class="clear"> </div>
-            <div id="store">
-                <ul>
-                    <li><a href="#"><span>스토어</span>에서<span> 새로운 친구</span> 만나기</a></li>
-                </ul>
-            </div>
+<script type="text/javascript" src="./js/scrolloverflow.js"></script> 
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script> 
+<script type="text/javascript" src="./js/examples.js"></script>
 
-        </section>
-        <div class="clear"> </div>
+<script src="./js_menu/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#header").load("./inc_header.html"); 
+        $("#footer").load("./inc_footer.html"); 
+        $("#contents").load("./inc_submenu2.html"); 
+    });
+</script> 
+</head> 
+<body>
+    <header id="header"></header>
+    <div id="contents"></div> 
+    <section>
+        <div id="sub_subtitle">
+            <p>NEW<br /><span>새로온 맛있는 친구들을 만나보세요</span></p>
+        </div>
 
-<? include "inc_footer.html" ?>
+    <div id=sub_ne_title>
+        <ul>
+            <li><img src="images/new_05.png"></li>
+            <li>구하기 힘든 특수 채소로<br /><span>이국적인 식탁 만들기</span></li>
+            <li>요리를 즐겁게! 이제 특수채소도 본에서 만나보세요!</li>
+        </ul>
+    </div>
+    <div id="sub_ne_img">
+        <ul>
+            <li><img src="images/f1imgs_09.png"></li>
+            <li><img src="images/f1imgs_11.png"></li>
+            <li><img src="images/f1imgs_13.png"></li>
+            <li><img src="images/f1imgs_15.png"></li>
+            <li><img src="images/f1imgs_22.png"></li>
+            <li><img src="images/f1imgs_24.png"></li>
+            <li><img src="images/f1imgs_25.png"></li>
+            <li><img src="images/f1imgs_26.png"></li>
+        </ul>
+    </div>
+    <div class="clear"> </div>
+    <div id="store">
+        <ul>
+            <li><a href="#"><span>스토어</span>에서<span> 새로운 친구</span> 만나기</a></li>
+        </ul>
+    </div>
+
+    </section>
+    <div class="clear"> </div>
+    <footer id="footer"></footer>
+</body>
+</html>
